@@ -2,6 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profileImg from "../assets/images/profile.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin,faGithub,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'; 
 
 const Home = () => {
   return (
@@ -19,15 +22,20 @@ const Home = () => {
       </div>
 
       <div className="home__social">
-        <a href="#" className="home__social-icon">
-          <i className='bx bxl-linkedin'></i>
+        <a href="https://www.linkedin.com/in/carlos-muleke-084552362" className="home__social-icon">
+          <FontAwesomeIcon icon={faLinkedin} style={{ color: '#0077B5' }} />
         </a>
-        <a href="#" className="home__social-icon">
-          <i className='bx bxl-behance'></i>
+        <a href="https://github.com/carlos45-dev" className="home__social-icon">
+          <FontAwesomeIcon icon={faGithub} style={{ color: '#171515' }} />
         </a>
-        <a href="#" className="home__social-icon">
-          <i className='bx bxl-github'></i>
+        <a href="https://wa.me/265992779377" className="home__social-icon">
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} />
         </a>
+        <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
+          <FontAwesomeIcon icon={faFacebook } style={{ color: '#1877F2' }} />
+        </a>
+        
+        
       </div>
 
       <div className="home__img">
