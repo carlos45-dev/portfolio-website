@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import work from "../assets/images/work.jpg"; 
 
 const Skills = () => {
   return (
@@ -9,7 +10,7 @@ const Skills = () => {
         <div>
           <motion.h2
             className="skills__subtitle"
-            initial={{ opacity: 0, x: -30 }}
+            initial ={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
@@ -26,12 +27,11 @@ const Skills = () => {
             I have experience with HTML, CSS, JavaScript, and React, along with
             version control tools like Git and GitHub. These skills enable me to
             build clean, interactive web interfaces and collaborate effectively in
-            team-based development environments. Click
+            team-based development environments. Click {'\u00A0'}
             <a
               href="https://www.linkedin.com/in/carlos-muleke-084552362"
               style={{ color: "#c084fc" }}
-            >
-              here👈
+            >here👈{'\u00A0'}
             </a>
             to see my certifications.
           </motion.p>
@@ -65,7 +65,7 @@ const Skills = () => {
         </div>
 
         <div>
-          <img src="assets/img/work3.jpg" alt="" className="skills__img" />
+          <img src={work} alt="skill" className="skills__img" />
         </div>
       </div>
     </section>

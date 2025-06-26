@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import profile from "../assets/images/profile2.jpg"; 
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
 
       <div className="about__container bd-grid">
         <div className="about__img">
-          <img src="assets/img/about.jpg" alt="" />
+          <img src={profile} alt="" />
         </div>
 
         <div>
