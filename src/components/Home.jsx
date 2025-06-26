@@ -10,7 +10,6 @@ const Home = () => {
           Hi,<br />I&apos;m <span className="home__title-color">Carlos Muleke</span>
           <br /> Front End  Developer
         </h1>
-        <a href="#contact" className="button">Contact</a>
       </div>
 
       <div className="home__social">
