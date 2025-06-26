@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -9,10 +11,28 @@ const About = () => {
         </div>
 
         <div>
-          <h2 className="about__subtitle">I&apos;m Carlos</h2>
-          <p className="about__text">
-             A front-end developer with two certifications and a strong passion for building modern, responsive websites. Currently in my third year studying Computer Science at the University of Malawi, I focus on creating clean, user-friendly interfaces while continuously expanding my skills in web development.
-          </p>
+          <motion.h2
+            className="about__subtitle"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            I&apos;m Carlos
+          </motion.h2>
+          <motion.p
+            className="about__text"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            A front-end developer with two certifications and a strong passion for
+            building modern, responsive websites. Currently in my third year
+            studying Computer Science at the University of Malawi, I focus on
+            creating clean, user-friendly interfaces while continuously expanding
+            my skills in web development.
+          </motion.p>
         </div>
       </div>
     </section>

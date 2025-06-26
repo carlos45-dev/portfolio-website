@@ -1,15 +1,21 @@
 // File: src/components/Home.jsx
 import React from 'react';
+import { motion } from 'framer-motion';
 import profileImg from "../assets/images/profile.png"; // Adjust the path as needed
 
 const Home = () => {
   return (
     <section className="home bd-grid" id="home">
       <div className="home__data">
-        <h1 className="home__title">
+        <motion.h1
+          className="home__title"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           Hi,<br />I&apos;m <span className="home__title-color">Carlos Muleke</span>
           <br /> Front End  Developer
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="home__social">
