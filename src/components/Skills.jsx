@@ -58,7 +58,7 @@ const Skills = () => {
           <div className="skills__data">
             <div className="skills__names">
               <i className='bx bxs-paint skills__icon'></i>
-              <span className="skills__name">Git/Github</span>
+              <span className="skills__name">Git</span>
             </div>
             <div className="skills__bar skills__ux"></div>
             <div>

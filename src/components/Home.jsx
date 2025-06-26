@@ -1,5 +1,6 @@
 // File: src/components/Home.jsx
 import React from 'react';
+import profileImg from "../assets/images/profile.png"; // Adjust the path as needed
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
               className="home__blob-img"
               x="50"
               y="60"
-              href="assets/img/perfil.png"
+              href={profileImg}
               alt="Profile"
             />
           </g>
