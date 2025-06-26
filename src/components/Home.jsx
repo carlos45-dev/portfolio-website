@@ -3,8 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import profileImg from "../assets/images/profile.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin,faGithub,faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'; 
+import { faLinkedin,faGithub,faWhatsapp,faFacebook,faInstagram} from '@fortawesome/free-brands-svg-icons';
+
 
 const Home = () => {
   return (
@@ -34,8 +34,10 @@ const Home = () => {
         <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
           <FontAwesomeIcon icon={faFacebook } style={{ color: '#1877F2' }} />
         </a>
-        
-        
+          <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
+          <FontAwesomeIcon icon={faInstagram} style={{ color: '#E4405F' }} />
+        </a>
+         
       </div>
 
       <div className="home__img">
