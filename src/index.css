@@ -137,6 +137,7 @@ img {
     display: none;
   }
   
+  
 }
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -214,7 +215,7 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 70px;
   width: 260px;
   margin-top:40px;
 }

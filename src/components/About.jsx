@@ -28,7 +28,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            A front-end developer with two certifications and a strong passion for
+            A front-end developer with  certifications and a strong passion for
             building modern, responsive websites. Currently in my third year
             studying Computer Science at the University of Malawi, I focus on
             creating clean, user-friendly interfaces while continuously expanding
