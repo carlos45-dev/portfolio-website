@@ -133,6 +133,9 @@ img {
     background-color: var(--second-color);
     transition: 0.5s;
   }
+  .remove {
+    display: none;
+  }
 }
 .nav__item {
   margin-bottom: var(--mb-4);
