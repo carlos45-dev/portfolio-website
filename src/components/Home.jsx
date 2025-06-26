@@ -33,11 +33,7 @@ const Home = () => {
         </a>
         <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
           <FontAwesomeIcon icon={faFacebook } style={{ color: '#1877F2' }} />
-        </a>
-          <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
-          <FontAwesomeIcon icon={faInstagram} style={{ color: '#E4405F' }} />
-        </a>
-         
+         </a>
       </div>
 
       <div className="home__img">

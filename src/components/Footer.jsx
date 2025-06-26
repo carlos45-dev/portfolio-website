@@ -1,16 +1,26 @@
-// Footer.jsx
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub, faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer__title">Carlos Muleke</p>
       <div className="footer__social">
-        <a href="#" className="footer__icon"><i className='bx bxl-facebook'></i></a>
-        <a href="#" className="footer__icon"><i className='bx bxl-instagram'></i></a>
-        <a href="#" className="footer__icon"><i className='bx bxl-twitter'></i></a>
+        <a href="https://www.linkedin.com/in/carlos-muleke-084552362" className="home__social-icon">
+          <FontAwesomeIcon icon={faLinkedin} style={{ color: '#0077B5' }} />
+        </a>
+        <a href="https://github.com/carlos45-dev" className="home__social-icon">
+          <FontAwesomeIcon icon={faGithub} style={{ color: '#ffffff' }} />
+        </a>
+        <a href="https://wa.me/265992779377" className="home__social-icon">
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} />
+        </a>
+        <a href="https://web.facebook.com/carlos.bathromew" className="home__social-icon">
+          <FontAwesomeIcon icon={faFacebook} style={{ color: '#1877F2' }} />
+        </a>
       </div>
-      <p className="footer__copy">&#169; Carlos Muleke. All rigths reserved</p>
+      <p className="footer__copy">&#169; Carlos Muleke. All rights reserved</p>
     </footer>
   );
 };
