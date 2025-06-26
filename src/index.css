@@ -200,6 +200,7 @@ img {
   color: var(--first-color);
 }
 .home__social {
+
   display: flex;
   flex-direction: column;
 }
@@ -217,7 +218,7 @@ img {
   right: 0;
   top: 90px;
   width: 260px;
-  margin-top:40px;
+  margin-top:70px;
 }
 .home__blob {
   fill: var(--first-color);
