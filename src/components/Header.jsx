@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,7 +13,6 @@ function Header() {
     setActiveLink(id);  
   };
 
-  
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
@@ -22,10 +23,7 @@ function Header() {
         const sectionTop = current.offsetTop - 58;
         const sectionId = current.getAttribute("id");
 
-        if (
-          scrollY > sectionTop &&
-          scrollY <= sectionTop + sectionHeight
-        ) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           setActiveLink(sectionId);
         }
       });
@@ -59,7 +57,7 @@ function Header() {
         </div>
 
         <div className="nav__toggle" id="nav-toggle" onClick={handleToggle}>
-          <i className='bx bx-menu'></i>
+          <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
         </div>
       </nav>
     </header>
