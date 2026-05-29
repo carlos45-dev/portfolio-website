@@ -17,7 +17,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
           Hi,<br />I&apos;m <span className="home__title-color">Carlos Muleke</span>
-          <br /> Front End  Developer
+          <br /> Full Stack Developer
         </motion.h1>
       </div>
 
