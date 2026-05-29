@@ -43,6 +43,8 @@ const Skills = () => {
             { icon: "bx bxl-javascript", name: "JavaScript", bar: "skills__js", percent: "65%" },
             { icon: "bx bxs-paint", name: "React", bar: "skills__ux", percent: "85%" },
             { icon: "bx bxs-paint", name: "Git", bar: "skills__ux", percent: "99%" },
+            { icon: "bx bxs-paint", name: "Node.js", bar: "skills__ux", percent: "80%" },
+            { icon: "bx bxs-paint", name: "Flutter", bar: "skills__ux", percent: "70%" },
           ].map((skill, index) => (
             <motion.div
               className="skills__data"
